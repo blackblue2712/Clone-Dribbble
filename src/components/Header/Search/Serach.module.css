@@ -1,0 +1,86 @@
+.Search {
+    position: relative;
+}
+
+.Search .Open input {
+    visibility: visible;
+    width: 10rem;
+    padding: .8rem .4rem .8rem 1.8rem;
+    animation: showSearchInput .2s ease;
+}
+.Search .Close input {
+    animation: hideSearchInput .2s linear;
+    visibility: hidden;
+}
+
+.Search svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 7px;
+}
+.Search input {
+    padding: .2rem;
+    border-radius: 8px;
+    border: 3px solid rgba(234,76,137,0.2);
+    outline: none;
+    color: #6e6d7a;
+    font-size: .9rem;
+    width: 0;
+}
+
+@keyframes showSearchInput {
+    0% {
+        width: 0rem
+    }
+
+    100% {
+        width: 10rem;
+    }
+}
+@keyframes hideSearchInput {
+    0% {
+        width: 10rem;
+        visibility: visible;
+        padding: .8rem .4rem .8rem 1.8rem;
+    }
+    50% {
+        padding: .8rem .4rem .8rem 1.8rem;
+    }
+    100% {
+        width: 1rem;
+    }
+}
+
+
+@media (max-width: 868px) {
+    .Search .Open input {
+        width: 5rem;
+        font-size: .7rem;
+    }
+
+
+    @keyframes showSearchInput {
+        0% {
+            width: 0rem
+        }
+
+        100% {
+            width: 5rem;
+        }
+    }
+    @keyframes hideSearchInput {
+        0% {
+            width: 5rem;
+            visibility: visible;
+            padding: .8rem .4rem .8rem 1.8rem;
+        }
+        50% {
+            padding: .8rem .4rem .8rem 1.8rem;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}

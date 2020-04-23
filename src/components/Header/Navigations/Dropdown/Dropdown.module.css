@@ -1,0 +1,64 @@
+.Dropdown {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 16px 16px #e3e3e3;
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    z-index: 10;
+    display: none;
+}
+
+
+.DropdownItems {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.DropdownForDesgin {
+    
+}
+.DropdownForDesgin .DropdownItems li div {
+    width: 175px;
+}
+
+
+.BgNav {
+    position: absolute;
+    right: -1rem;
+    background: url(../../../../assets/images/nav-bg.png);
+    background-size: 769px 222px;
+    height: 100%;
+    min-width: 150px;
+    overflow: hidden;
+    z-index: -1;
+    width: 100px;
+}
+
+.DropdownForDesgin .BgNav {
+    min-width: 50%;
+    height: 100%;
+}
+.DropdownForDesgin .DropdownItems{
+    justify-content: flex-start !important;
+}
+
+@media (max-width: 1130px) {
+    .BgNav {
+        display: none;
+    }
+    .DropdownForDesgin .BgNav {
+        display: block;
+    }
+
+    .DropdownItems {
+        justify-content: stretch;
+    }
+}
+
+@media (max-width: 910px) {
+    
+}

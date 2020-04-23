@@ -1,0 +1,26 @@
+.Header {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.Header .Inner {
+    padding: 0 1rem;
+    height: 5rem;
+}
+
+.Header .Inner > ul:last-of-type {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .Header .Inner {
+        height: 3.75rem;
+    }
+
+    .Header .Inner > ul:first-of-type {
+        display: none;
+    }
+    .Header .Inner > ul:last-of-type {
+        display: flex;
+    }
+
+}
