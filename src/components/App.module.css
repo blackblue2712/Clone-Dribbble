@@ -1,0 +1,10 @@
+.App {
+    display: grid;
+    grid-template-rows: 5rem 1fr 20rem;
+}
+
+@media (max-width: 760px) {
+    .App {
+        grid-template-rows: 3.75rem 1fr 20rem;
+    }
+}
