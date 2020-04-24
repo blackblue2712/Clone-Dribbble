@@ -1,26 +1,27 @@
-.Button {
+.btn {
     padding: .7rem .9rem !important;
     font-weight: 500;
+    display: inline-block;
 }
 
-.ButtonRadius {
-    border-radius: 10px;
+.btn-radius {
+    border-radius: 8px;
 }
 
-.ButtonColorWhite {
+.btn-color-white {
     color: white;
 }
 
-.ButtonOutline {
+.btn-outline {
     outline: none;
     background: transparent;
     border: none;
 }
 
-.ButtonPrimay {
+.btn-primary {
     background-color: #ea4c89
 }
-.ButtonPrimay:hover {
+.btn-primary:hover {
     background-color: #f082ac;
     color: white !important;
 }

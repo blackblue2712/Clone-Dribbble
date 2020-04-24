@@ -5,7 +5,6 @@ import NavigationItem from './NavigationItem/NavigationItem';
 import CaretDown from '../../UI/Caret/CaretDown';
 import Search from '../Search/Search';
 import classes from './Navigations.module.css';
-import btnClasses from '../../UI/Button/Button.module.css';
 import Dropdown from './Dropdown/Dropdown';
 import DropdownForDesign from './Dropdown/DropdownForDesign';
 import NavMobile from './NavMobile';
@@ -106,7 +105,7 @@ const Navigations = props => {
                 </NavigationItem>
                 <NavigationItem link="sign-in">Sign in</NavigationItem>
                 <NavigationItem
-                    linkClass={[btnClasses.Button, btnClasses.ButtonPrimay, btnClasses.ButtonColorWhite, btnClasses.ButtonRadius].join(" ")}
+                    linkClass="btn btn-primary btn-color-white btn-radius"
                     link="sign-up"
                 >
                     Sign up

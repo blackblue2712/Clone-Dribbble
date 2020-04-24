@@ -1,0 +1,43 @@
+.hiring-main {
+    padding: .5rem 2rem;
+
+}
+
+.section-inner {
+    padding: 2rem 6rem 2rem 8.75rem;
+}
+.section-brand-title {
+    color: #4f3cc9;
+    font-weight: 700;
+}
+
+.section-title.bold {
+    font-weight: bold;
+}
+.section-title span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+}
+.section-title-m {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.section-title-s {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.section-description {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #6e6d7a;
+}
+.section-description.bold {
+    color: #0d0c22;
+}
+
+.section-description-m {
+    font-size: 1rem;
+    color: #6e6d7a;
+    line-height: 1.5rem;
+}
