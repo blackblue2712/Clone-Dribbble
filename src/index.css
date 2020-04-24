@@ -51,12 +51,21 @@
     background-color: #ea4c89;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   font-family: 'Haas Grot Text R Web', sans-serif;
   font-size: 0.875rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    height: 100%;
 }
 
 * {
@@ -85,4 +94,14 @@ a {
 /* MARGIN */
 .ml-auto {
     margin-left: auto;
+}
+
+
+/* LAYOUT */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
 }
