@@ -11,6 +11,7 @@
     position: absolute;
     right: 0;
     top: 5rem;
+    z-index: 0;
 }
 .hiring-panel .avatar-card {
     background-color: #fff;
@@ -27,7 +28,7 @@
 .hiring-panel .avatar-card:nth-of-type(2) {
     position: absolute;
     z-index: 0;
-    top: 210px;
+    bottom: -26px;
     width: 480px;
     box-shadow: unset;
     background: #F0ECE8;
@@ -142,9 +143,9 @@
 }
 
 @media (max-width: 1185px) {
-    .hiring-panel {
+    /* .hiring-panel {
         right: -4rem;
-    }
+    } */
 }
 
 @media (max-width: 1145px) {
@@ -154,5 +155,16 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 7rem;
+    }
+
+    .avatar-card {
+        min-width: 546px;
+    }
+    .hiring-panel .avatar-card:nth-of-type(2) {
+        bottom: 494px;
+        left: 200px;
+    }
+    .hiring-panel .avatar-card:nth-of-type(3) {
+        margin-left: -6rem;
     }
 }

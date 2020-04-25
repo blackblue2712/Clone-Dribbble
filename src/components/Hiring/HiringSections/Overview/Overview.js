@@ -2,17 +2,17 @@ import React from 'react';
 
 import './Overview.css';
 import SectionBigImage from '../../../../assets/images/section-overview-1.jpg';
-import LgStarbucks from './LogoClientSvg/Starbucks';
-import Facebook from './LogoClientSvg/Facebook';
-import Amazon from './LogoClientSvg/Amazon';
-import Salesforce from './LogoClientSvg/Salesforce';
-import Mailchimp from './LogoClientSvg/Mailchimp';
-import Vimeo from './LogoClientSvg/Vimeo';
-import Ghost from './LogoClientSvg/Ghost';
-import WalmartLabs from './LogoClientSvg/WalmartLabs';
-import Thoughtbot from './LogoClientSvg/Thoughtbot';
-import Asana from './LogoClientSvg/Asana';
-import GoodMoney from './LogoClientSvg/GoodMoney'
+import LgStarbucks from '../../../UI/SVG/Starbucks';
+import Facebook from '../../../UI/SVG/Facebook';
+import Amazon from '../../../UI/SVG/Amazon';
+import Salesforce from '../../../UI/SVG/Salesforce';
+import Mailchimp from '../../../UI/SVG/Mailchimp';
+import Vimeo from '../../../UI/SVG/Vimeo';
+import Ghost from '../../../UI/SVG/Ghost';
+import WalmartLabs from '../../../UI/SVG/WalmartLabs';
+import Thoughtbot from '../../../UI/SVG/Thoughtbot';
+import Asana from '../../../UI/SVG/Asana';
+import GoodMoney from '../../../UI/SVG/GoodMoney'
 import Client from '../../../../assets/images/client-1.png';
 
 const Overview = props => {

@@ -1,11 +1,14 @@
 .hiring-main {
     padding: .5rem 2rem;
-
 }
 
 .section-inner {
     padding: 2rem 6rem 2rem 8.75rem;
 }
+.section-inner-narrow-right {
+    padding-right: 0;
+}
+
 .section-brand-title {
     color: #4f3cc9;
     font-weight: 700;
@@ -40,4 +43,10 @@
     font-size: 1rem;
     color: #6e6d7a;
     line-height: 1.5rem;
+}
+
+@media (min-width: 1290px) {
+    .section-inner-narrow-right {
+        padding-right: 8rem;
+    }
 }

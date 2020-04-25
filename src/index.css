@@ -105,3 +105,8 @@ a {
 .align-items-center {
     align-items: center;
 }
+
+.width-40 {
+    width: 40%;
+    max-width: 400px;
+}

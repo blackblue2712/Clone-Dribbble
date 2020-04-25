@@ -1,0 +1,175 @@
+.hiring-panel-design {
+    position: relative;
+    margin-top: 10rem;
+    border-radius: 5px;
+    min-width: 500px;
+}
+
+.hiring-panel-design__background {
+    background: #F3EFEB;
+    padding: 2rem 3rem 10rem 3rem;
+    margin-left: 1rem;
+}
+
+.hiring-panel-design .avatar-card {
+    padding: 1.5rem 1rem;
+    width: 375px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.hiring-panel-design .avatar-card:nth-of-type(1) {
+    box-shadow: 2px 4px 10px 6px #e1e1e169;
+    margin-top: -8rem;
+    margin-left: -4.4rem;
+    position: relative;
+    z-index: 1;
+}
+.hiring-panel-design .avatar-card:nth-of-type(2) {
+    box-shadow: unset;
+    margin-top: -3rem;
+    margin-left: -2.3rem;
+    position: relative;
+    z-index: 1;
+}
+.hiring-panel-design .avatar-card:nth-of-type(3) {
+    position: absolute;
+    top: -3.25rem;
+    z-index: 2;
+    right: -10%;
+    width: 220px;
+    box-shadow: 3px 2px 16px 3px #edededc4;
+}
+
+
+
+.designer-search-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#designer-search .section-overiew__items {
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.avatar-card .card-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.avatar-card .card-top img {
+    width: 56px;
+    height: 56px;
+}
+.avatar-card .card-top h3 {
+    margin: 0;
+}
+.avatar-card .card-top > div {
+    margin-left: 1.5rem;
+    margin-right: auto;
+}
+.avatar-card .card-top .client-profile-name {
+    margin-top: .25rem;
+    color: #6e6d7a;
+}
+.avatar-card .card-top .section-title-s {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.avatar-card .card-top a.btn {
+    display: flex;
+    align-items: center;
+}
+.avatar-card .card-top svg {
+    width: 16px;
+    margin-right: .4rem;
+    fill: white;
+}
+
+.card-shtos img {
+    width: 110px;
+}
+.card-shtos img:not(:last-of-type) {
+    margin-right: 4px;
+}
+
+.avatar-card span svg {
+    fill: #000;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+.avatar-card-m {
+    max-width: 220px !important;
+    padding: 1rem !important;
+}
+
+.hiring-detail-box {
+    background-color: #0D0C22;
+    padding: 1rem 1rem 2rem 1rem;
+    color: #fff;
+    max-width: 220px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 170px;
+    right: -10%;
+    box-shadow: 8px 6px 20px 5px #d5d5d5;
+}
+.hiring-detail-box svg {
+    fill: #fff;
+    width: 16px;
+    margin-right: .8rem;
+}
+
+.hiring-detail-box .hiring-detail__items {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hiring-detail-box .hiring-detail__item {
+    padding: .8rem;
+    display: flex;
+}
+
+@media (max-width: 1145px) {
+    .designer-search-layout {
+        flex-direction: column;
+    }
+
+    .hiring-panel-design {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hiring-panel-design__background {
+        padding-bottom: 6rem;
+    }
+    
+    .avatar-card {
+        width: 400px !important;
+    }
+
+    .hiring-detail-box {
+        bottom: 46px;
+    }
+
+    .hiring-panel-design .avatar-card:nth-of-type(1) {
+        margin-left: -6.4rem;
+    }
+    .hiring-panel-design .avatar-card:nth-of-type(2) {
+        margin-left: -4.3rem;
+        box-shadow: 2px 4px 10px 6px #e1e1e169;
+    }
+    .hiring-panel-design .avatar-card:nth-of-type(3) {
+        margin-left: -6.4rem;
+    }
+
+}

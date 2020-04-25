@@ -3,6 +3,7 @@ import React from 'react';
 import HiriginNavTop from './HiringNavTop/HiringNavTop';
 import SectionOverview from './HiringSections/Overview/Overview';
 import SectionJobBoard from './HiringSections/JobBoard/JobBoard';
+import SectionDesignerSearch from './HiringSections/DesignerSearch/DesignerSerach';
 
 import "./HiringMain.css";
 
@@ -14,6 +15,7 @@ class HiringMain extends React.Component {
                 <HiriginNavTop />
                 <SectionOverview />
                 <SectionJobBoard />
+                <SectionDesignerSearch />
             </div>
         )
     }

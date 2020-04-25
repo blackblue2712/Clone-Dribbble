@@ -3,8 +3,8 @@ import React from 'react';
 import './JobBoard.css';
 import Mailchimp from '../../../../assets/images/mailchimp-avatar.png';
 import Dropbox from '../../../../assets/images/dropbox-avatar.png';
-import Location from './svg/location';
-import Job from './svg/job';
+import Location from '../../../UI/SVG/Location';
+import Job from '../../../UI/SVG/Job';
 
 class JobBoard extends React.Component {
 
