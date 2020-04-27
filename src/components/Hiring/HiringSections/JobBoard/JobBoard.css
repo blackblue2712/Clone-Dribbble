@@ -136,9 +136,9 @@
     fill: #6e6d7a;
 }
 
-@media (max-width: 1235px) {
+@media (min-width: 1235px) {
     .hiring-panel {
-        right: -2rem;
+        right: 2rem;
     }
 }
 

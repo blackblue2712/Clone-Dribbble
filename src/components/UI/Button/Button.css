@@ -2,6 +2,7 @@
     padding: .7rem .9rem !important;
     font-weight: 500;
     display: inline-block;
+    transition: .2s;
 }
 
 .btn-radius {
@@ -28,4 +29,17 @@
 
 .btn-green {
     background-color: #77e0b5;
+}
+.btn-wide {
+    padding-right: 1.4rem !important;
+    padding-left: 1.4rem !important;
+}
+
+.btn-gray {
+    background: #f3f3f4;
+    color: #0d0c22;   
+}
+
+.btn-gray:hover {
+    background: #e7e7e9;
 }

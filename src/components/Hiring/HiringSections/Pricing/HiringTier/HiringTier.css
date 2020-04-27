@@ -1,0 +1,165 @@
+.pricing-choose-tier {
+    width: 100%;
+    margin-top: 5rem;
+}
+.hiring-tier-grid {
+    display: grid;
+    grid-template-columns: 272px 190px 190px 190px 272px;
+    width: 100%;
+    justify-content: center;
+}
+
+.hiring-tier {
+    padding: 2rem 0;
+    max-width: 190px;
+    
+}
+
+
+.hiring-tier.hiring-tier-title-list {
+    max-width: 272px;
+    margin-top: 21rem;
+}
+
+.features-list-tier:not(:nth-child(1)) .section-brand-title  {
+    margin-top: 2.5rem;
+}
+.features-search-basic .features-list-tier li {
+    border-bottom-width: 0;
+    padding: .5rem 0;
+    height: auto;
+}
+
+.features-list__items {
+    padding-left: 2rem;
+}
+.features-list__item {
+    color: #6e6d7a;
+    font-weight: 500;
+    padding: .3rem 0;
+}
+.features-list__item.ticked {
+    color: #0d0c22;
+    margin-left: -1.275rem;
+}
+.features-list__item.ticked svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    fill: #77e0b5;
+    margin-right: .4rem;
+}
+
+.hiring-tier-meta {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.hiring-tier-meta .hiring-tier-price-slash {
+    color: #6e6d7a;
+    text-decoration: line-through;
+}
+
+.hiring-tier-meta .hiring-tier-price-real h1 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+}
+.hiring-tier-meta .hiring-tier-price-real span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+.hiring-tier-meta .hiring-tier-checkout-method {
+    color: #6e6d7a;
+    margin-bottom: 1rem;
+}
+
+
+
+.hiring-tier__recommend {
+    padding: 2rem;
+    box-shadow: 0px 20px 70px rgba(0,0,0,0.08);
+    margin: 0;
+    max-width: 272px;
+}
+
+.hiring-features-list-group li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    height: 52px;
+}
+.hiring-features-list-group li svg {
+    fill: #77e0b5;
+    width: 16px;
+    height: 16px;
+}
+
+/* .hiring-tier:not(:first-child) .hiring-features-list-group {
+    margin-top: 4.1rem;
+    text-align: center;
+} */
+.hiring-tier:not(:first-child) .hiring-features-list-group {
+    margin-top: 4.12rem;
+    text-align: center;
+}
+.hiring-tier:last-child .hiring-features-list-group {
+    margin-top: 4rem;
+}
+
+.features-search-basic {
+    grid-column: 2 span;
+}
+
+.features-search-basic h3 {
+    color: #0d0c22;
+}
+.features-search-basic h3.dropdown {
+    cursor: pointer;
+}
+.features-search-basic h3.dropdown svg {
+    margin-left: 1rem !important;
+    display: inline-block;
+}
+.features-search-basic div h3 {
+    font-size: 1.025rem !important;
+    color: #0d0c22 !important;
+    display: flex;
+}
+.features-search-basic div h3 div {
+    margin-left: 2rem;
+}
+.features-search-basic div h3 span {
+    font-weight: 400;
+}
+
+.features-search-basic .dropdown.close + .features-list-tier {
+    display: none;
+}
+.features-search-basic .dropdown.open + .features-list-tier {
+    display: block;
+}
+
+.features-search-basic .dropdown.close svg {
+    animation: close .1s linear;
+    transform: rotate(0);
+}
+.features-search-basic .dropdown.open svg {
+    animation: open .1s linear;
+    transform: rotate(180deg);
+}
+
+@keyframes open {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes close {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

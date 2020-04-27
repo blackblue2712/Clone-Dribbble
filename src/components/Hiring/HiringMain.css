@@ -1,4 +1,7 @@
 .hiring-main {
+    
+}
+.hiring-main > section {
     padding: .5rem 2rem;
 }
 
@@ -12,6 +15,13 @@
 .section-brand-title {
     color: #4f3cc9;
     font-weight: 700;
+}
+.section-brand-title.primary {
+    color: #ea4c89;
+}
+.section-brand-title.gray {
+    color: #9e9ea7;
+    font-size: .75rem;
 }
 
 .section-title.bold {
@@ -49,4 +59,7 @@
     .section-inner-narrow-right {
         padding-right: 8rem;
     }
+    .section-inner-narrow-right.no-reponsive {
+        padding-right: 0;
+    }    
 }
