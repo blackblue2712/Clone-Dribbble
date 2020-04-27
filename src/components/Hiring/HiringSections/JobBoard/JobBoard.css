@@ -157,14 +157,37 @@
         margin-bottom: 7rem;
     }
 
-    .avatar-card {
+    .hiring-panel .avatar-card {
         min-width: 546px;
     }
     .hiring-panel .avatar-card:nth-of-type(2) {
         bottom: 494px;
-        left: 200px;
+        left: 20%;
     }
     .hiring-panel .avatar-card:nth-of-type(3) {
         margin-left: -6rem;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .hiring-panel .avatar-card:nth-of-type(2) {
+        bottom: 494px;
+        left: 10%;
+    }
+
+    .hiring-panel .avatar-card {
+        min-width: unset;
+        width: auto;
+    }
+}
+
+@media (max-width: 485px) {
+    .hiring-panel .avatar-card:nth-of-type(2) {
+        display: none;
+    }
+
+    .avatar-card {
+        width: auto !important;
     }
 }

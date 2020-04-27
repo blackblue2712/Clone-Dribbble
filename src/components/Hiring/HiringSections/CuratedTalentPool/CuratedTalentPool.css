@@ -16,7 +16,7 @@
 
 .talent-layout {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .talent-panel-design {
@@ -143,4 +143,52 @@
 }
 .section-quote-content p span {
     font-weight: 500;
+}
+
+@media (max-width: 1145px) {
+    .section-quote-content {
+        padding: 5rem;
+    }
+}
+@media (max-width: 1020px) {
+    .talent-layout {
+        flex-direction: column;
+    }
+    .talent-panel-design {
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .shared-quote {
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .section-quote-content {
+        position: relative;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .image-quote {
+        width: 90% !important;
+    }
+
+    #curated-talent-pool .section-inner-narrow-right {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #curated-talent-pool .section-overiew__items {
+        width: 100%;
+    }
+
+    .card-bot .card-button-1,
+    .card-bot .card-button-2,
+    .card-bot .card-button-3 {
+        display: none;
+    }
 }

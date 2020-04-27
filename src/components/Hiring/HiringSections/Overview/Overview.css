@@ -108,3 +108,21 @@
 }
 
 
+@media (max-width: 760px) {
+    .section-overlap {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+@media (max-width: 565px) {
+    .section-overview-client .section-client__top,
+    .section-overview-client .section-client__bot {
+        padding: 1rem 2rem;
+    }
+
+    .section-overiew-list .section-overiew__items {
+        flex-direction: column;
+    }
+}

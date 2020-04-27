@@ -63,6 +63,94 @@ const TierItemVIP = props => {
                     <li>-</li>
                 </ul>
             </div>
+
+            <div className="hiring-tier-title-list mobible">
+                <div className="features-list-tier">
+                    <h3 className="section-brand-title gray">JOB BOARD</h3>
+                    <ul className="hiring-features-list-group">
+                        <li>
+                            <span>Job borad slot</span>
+                            <span>0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div className="features-list-tier">
+                    <h3 className="section-brand-title gray">SEACH</h3>
+                    <ul className="hiring-features-list-group">
+                        <li>
+                            <span>List</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Role search</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Skill search</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Location</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Messages</span>
+                            <span><InfinityGreen /></span>
+                        </li>
+                    </ul>
+                </div>
+                <div className="features-list-tier">
+                    <h3 className="section-brand-title gray">ADDITIONAL SERACH FILTERS</h3>
+                    <ul className="hiring-features-list-group">
+                        <li>
+                            <span>Availability</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Relocation</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Experience level</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>Previous experience</span>
+                            <span><TickedGreen /></span>
+                        </li>
+                        <li>
+                            <span>High intent candidates</span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div className="features-list-tier">
+                    <h3 className="section-brand-title gray">MANAGAED RECRUITING</h3>
+                    <ul className="hiring-features-list-group">
+                        <li>
+                            <span>Dedicated Talet Manager</span>
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <span>Candidate matching</span>
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <span>Managed interview scheduling</span>
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <span>ATS intergration</span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#sub" className="btn btn-color-white btn-radius btn-primary btn-wide">
+                    Subscribe
+                </a>
+            </div>
+
             <div className="features-list-tier">
                 <div className="hiring-features-list-group">
                     <a href="#sub" className="btn btn-color-white btn-radius btn-primary btn-wide">

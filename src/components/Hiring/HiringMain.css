@@ -63,3 +63,20 @@
         padding-right: 0;
     }    
 }
+
+@media (max-width: 950px) {
+    .section-inner {
+        padding: 2rem 3rem;
+    }
+}
+@media (max-width: 565px) {
+    .section-inner {
+        padding: 2rem 0;
+    }
+    .section-title-m {
+        font-size: 1.2rem;
+    }
+    .redacted div:last-child {
+        display: none;
+    }
+}
