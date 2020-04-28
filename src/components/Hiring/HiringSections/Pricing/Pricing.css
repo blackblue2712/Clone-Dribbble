@@ -1,0 +1,159 @@
+#pricing {
+    
+}
+#pricing .pricing-layout  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prcing-plan {
+
+}
+
+.prcing-title h2 {
+    font-size: 2rem;
+    letter-spacing: .13rem;
+    margin-bottom: 0;
+}
+.prcing-title p {
+    text-align: center;
+    max-width: 420px;
+    margin: 1.2rem 0 2rem 0;
+}
+
+.prcing-plan .radio-plan__items {
+    display: flex;
+    background-color: #F8F8F8;
+    padding: 2rem 3rem;
+    justify-content: space-around;
+}
+.prcing-plan .radio-plan__item {
+    display: flex;
+}
+.prcing-plan .radio-plan__item label {
+    
+}
+.prcing-plan .radio-plan__item label span {
+    display: block;
+    margin-top: .2rem;
+    font-weight: 500;
+    color: #ea4c89;
+    font-size: .8rem;
+}
+.prcing-plan .radio-plan__item input {
+    background: #fff;
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: .4rem;
+    margin-top: 0;
+    outline: none;
+    transition: .2s;
+    position: relative;
+}
+.prcing-plan .radio-plan__item input:checked {
+    background: #EA5189;
+    border: 1px solid transparent;
+}
+.prcing-plan .radio-plan__item input:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hiring-tier-title-list.mobible {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .hiring-tier-grid {
+        grid-template-columns: 350px;
+    }
+    .hiring-tier-title-list.mobible {
+        display: block;
+    }
+    .features-list__items {
+        padding: 0;
+    }
+    .hiring-tier-meta .hiring-tier-checkout-method {
+        text-align: left;
+    }
+    .hiring-tier.hiring-tier-title-list {
+        display: none;
+    }
+    .hiring-tier-title-list.mobible .hiring-tier-title-list.mobible {
+        display: block;
+    }
+    .hiring-tier-title-list.mobible .features-list-tier {
+        display: block;
+    }
+    .hiring-tier-title-list.mobible .hiring-features-list-group {
+        text-align: left;
+        margin-top: 0;
+    }
+    .hiring-tier-title-list.mobible .hiring-features-list-group li {
+        display: flex;
+        justify-content: space-between;
+        border-bottom-width:0 ;
+    }
+    .hiring-tier {
+        max-width: 100%;
+        padding: 2rem;
+        box-shadow: 0px 20px 70px rgba(0,0,0,0.08);
+        margin: 0;
+        margin-bottom: 4rem;
+        border-radius: 15px;
+    }
+    .features-list-tier {
+        display: none;
+    }
+    .features-search-basic {
+        grid-column: 1;   
+    }
+    .hiring-tier-meta {
+        align-items: flex-start;
+    }
+    .hiring-tier a.btn {
+        width: 100%;
+    }
+    .hiring-tier-meta a.btn:first-of-type {
+        display: none;
+    }
+    .hiring-tier-title-list.mobible a.btn {
+        display: block;
+        text-align: center;
+        margin-top: .6rem;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .hiring-tier-grid {
+        grid-template-columns: 300px;
+    }
+
+    .prcing-plan .radio-plan__items {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .prcing-plan .radio-plan__item {
+        width: 100%;
+    }
+    .prcing-plan .radio-plan__item:first-of-type {
+        margin-bottom: 1rem;
+    }
+    .prcing-plan .radio-plan__item label span {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+}

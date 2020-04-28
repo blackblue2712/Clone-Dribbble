@@ -1,0 +1,45 @@
+.btn {
+    padding: .7rem .9rem !important;
+    font-weight: 500;
+    display: inline-block;
+    transition: .2s;
+}
+
+.btn-radius {
+    border-radius: 8px;
+}
+
+.btn-color-white {
+    color: white;
+}
+
+.btn-outline {
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #ea4c89
+}
+.btn-primary:hover {
+    background-color: #f082ac;
+    color: white !important;
+}
+
+.btn-green {
+    background-color: #77e0b5;
+}
+.btn-wide {
+    padding-right: 1.4rem !important;
+    padding-left: 1.4rem !important;
+}
+
+.btn-gray {
+    background: #f3f3f4;
+    color: #0d0c22;   
+}
+
+.btn-gray:hover {
+    background: #e7e7e9;
+}

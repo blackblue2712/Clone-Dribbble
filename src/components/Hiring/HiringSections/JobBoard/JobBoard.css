@@ -1,0 +1,193 @@
+#job-board {
+    position: relative;
+}
+
+#job-board .section-overiew__items {
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.hiring-panel {
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    z-index: 0;
+}
+.hiring-panel .avatar-card {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    min-height: 230px;
+    width: 500px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+.hiring-panel .avatar-card:nth-of-type(1) {
+    box-shadow: 0px 0px 20px 20px #ededed6e;
+}
+.hiring-panel .avatar-card:nth-of-type(2) {
+    position: absolute;
+    z-index: 0;
+    bottom: -26px;
+    width: 480px;
+    box-shadow: unset;
+    background: #F0ECE8;
+    opacity: .8;
+}
+.hiring-panel .avatar-card:nth-of-type(3) {
+    margin-left: -3rem;
+    margin-top: -3rem;
+    box-shadow: -3px -3px 20px 1px #dcdcdc8c;
+}
+.hiring-panel .avatar-profile {
+    display: flex;
+    align-items: center;
+}
+.hiring-panel .avatar-profile img {
+    width: 56px;
+    height: 56px;
+}
+
+.hiring-panel .avatar-profile h2 {
+    margin: 0
+}
+.hiring-panel .avatar-profile > div {
+    margin-left: 1rem;
+}
+
+.avatar-profile .section-title-m {
+
+}
+
+.avatar-profile .client-profile-name {
+
+}
+
+.redacted {
+    margin-top: 2rem;
+}
+
+.redacted div {
+    height: 12px;
+    background: #e0e0e0;
+    margin-bottom: .7rem;
+    position: relative;
+}
+
+.redacted div::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 12px;
+    background-color: #fff;
+    top: 0;
+}
+.redacted div:nth-of-type(1)::after {
+    left: 22%;
+}
+.redacted div:nth-of-type(2)::after {
+    left:16%;
+}
+.redacted div:nth-of-type(3)::after {
+    left: 22%;
+}
+
+.redacted div::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 12px;
+    background-color: #fff;
+    top: 0;
+}
+.redacted div:nth-of-type(1)::before {
+    left: 42%;
+}
+.redacted div:nth-of-type(2)::before {
+    left:70%;
+}
+.redacted div:nth-of-type(3)::before {
+    left: 55%;
+}
+
+
+.redacted div:nth-of-type(1) {
+    width: 92%;
+}
+.redacted div:nth-of-type(2) {
+    width: 86%;
+}
+.redacted div:nth-of-type(3) {
+    width: 95%;
+}
+
+.hiring-panel .card-info {
+    user-select: none;
+    color: #6e6d7a;
+    font-weight: 500;
+    padding: .7rem .9rem;
+    background: #f2f2f2;
+    margin-right: 1rem;
+    margin-top: .2rem;
+    display: inline-block;
+}
+.hiring-panel .card-info svg {
+    width: 13px;
+    fill: #6e6d7a;
+}
+
+@media (min-width: 1235px) {
+    .hiring-panel {
+        right: 2rem;
+    }
+}
+
+@media (max-width: 1185px) {
+    /* .hiring-panel {
+        right: -4rem;
+    } */
+}
+
+@media (max-width: 1145px) {
+    .hiring-panel {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 7rem;
+    }
+
+    .hiring-panel .avatar-card {
+        min-width: 546px;
+    }
+    .hiring-panel .avatar-card:nth-of-type(2) {
+        bottom: 494px;
+        left: 20%;
+    }
+    .hiring-panel .avatar-card:nth-of-type(3) {
+        margin-left: -6rem;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .hiring-panel .avatar-card:nth-of-type(2) {
+        bottom: 494px;
+        left: 10%;
+    }
+
+    .hiring-panel .avatar-card {
+        min-width: unset;
+        width: auto;
+    }
+}
+
+@media (max-width: 485px) {
+    .hiring-panel .avatar-card:nth-of-type(2) {
+        display: none;
+    }
+
+    .avatar-card {
+        width: auto !important;
+    }
+}

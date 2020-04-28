@@ -1,0 +1,87 @@
+.footer-item {
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-item__title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .8rem 0 1.3rem 0;
+    cursor: pointer;
+}
+.footer-item__title:hover {
+    color: #0d0c22;
+}
+.footer-item__description {
+    margin-bottom: 1.3rem;
+}
+
+.footer-item-about {
+    min-width: 200px;
+    flex-basis: 25%;
+}
+.footer-about__socials img {
+    opacity: .36;
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+.footer-about__socials img:hover {
+    opacity: .96;
+}
+
+.footer-item-nav {
+    display: flex;
+}
+
+.footer-nav__list {
+    display: flex;
+}
+
+.footer-nav__items {
+    margin-right: 2rem;
+}
+
+.footer-nav__item a {
+    padding: .3rem 0;
+    display: inline-block;
+}
+.footer-nav__item a:hover {
+    color: #0d0c22
+}
+
+
+.footer-job__item {
+    margin-bottom: 1rem;
+}
+.footer-job__item a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0d0c22;
+    display: block;
+}
+.footer-job__item span {
+
+}
+
+.footer-job__item img {
+    width: 30px;
+    height: 37px;
+    margin-right: .5rem;
+}
+
+.footer-item__count .count {
+    font-size: 1.6rem;
+    color: #0d0c22;
+    font-weight: 500;
+}
+
+.footer-item__count img {
+    margin-right: .5rem;
+}
+
+@media (max-width: 400px) {
+    .footer-item-nav {
+        flex-direction: column;
+    }
+}
