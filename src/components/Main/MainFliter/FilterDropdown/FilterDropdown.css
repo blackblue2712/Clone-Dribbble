@@ -1,0 +1,130 @@
+
+
+.filter-views {
+    font-size: 0.875rem;
+    color: #6e6d7a;
+    min-width: 178px;
+    position: relative;
+}
+.filter-views .filter-views__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: .6rem .8rem;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+    outline: rgba(234,76,137,0.4);
+    max-height: 38px;
+}
+.filter-views .filter-views__title:focus {
+    border-color: rgba(234,76,137,0.4);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+
+.filter-views .filter-views__item svg {
+    width: 16px;
+    height: 16px;
+    margin-right: .4rem;
+}
+
+.filter-views .filter-views__title.close + .filter-views__items  {
+    display: none;
+}
+.filter-views .filter-views__title.close svg {
+    transform: rotate(0deg);
+    animation: closeCaret .2s ease;
+}
+.filter-views .filter-views__title.open + .filter-views__items  {
+    display: block;
+}
+.filter-views .filter-views__title.open svg {
+    transform: rotate(180deg);
+    animation: openCaret .2s ease;
+}
+
+.filter-views .filter-views__items {
+    margin-top: .3rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    min-width: 180px;
+    background: #fff;
+    position: absolute;
+    z-index: 5;
+}
+.filter-views .filter-views__item.line {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: .1rem 0;
+}
+.filter-views .filter-views__item a {
+    padding: .6rem .8rem;
+    display: inline-block;
+    margin-bottom: .2rem;
+    width: 100%;
+    transition: .2s;
+}
+.filter-views .filter-views__item:hover a {
+    background: #e7e7e9;
+}
+.filter-views .filter-views__item.active a, 
+.filter-views .filter-views__item:first-of-type a {
+    font-weight: 500;
+    color: #ea4c89;
+}
+
+
+#js-open-settings {
+    height: 0;
+}
+#js-open-settings.open {
+    height: 100%;
+    animation: openSettings .2s linear;
+    overflow: unset;
+}
+#js-open-settings.close {
+    overflow: hidden;
+    height: 0;
+    animation: closeSettings .2s linear;
+}
+
+@keyframes openSettings {
+    0% {
+        height: 0;
+        overflow: hidden;
+    }
+
+    100% {
+        height: 62px;
+        overflow: hidden;
+    }
+}
+@keyframes closeSettings {
+    0% {
+        height: 62px;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes openCaret {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes closeCaret {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}

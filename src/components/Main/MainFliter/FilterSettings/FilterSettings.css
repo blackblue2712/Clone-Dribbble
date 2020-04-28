@@ -1,0 +1,111 @@
+.filter-settings {
+    /* position: relative; */
+}
+
+.filter-settings__title {
+    display: inline-block;
+    padding: .6rem .8rem;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+.filter-settings__title svg {
+    fill: #0d0c22;
+    width: 14px;
+    height: 14px;
+}
+
+
+.filter-settings__items {
+    /* display: grid;
+    grid-template-columns: repeat(5, minmax(15%, 1fr));  */
+    display: flex;
+    justify-content: space-between;
+}
+.filter-settings__item:not(:last-child) {
+    margin-right: 1rem;
+}
+.filter-settings__item {
+    width: 100%;
+}
+.filter-settings__item input {
+    max-width: 178px;
+    width: 100%;
+    padding: .6rem .4rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.15);
+    outline: none;
+    display: inline-block;
+    color: #6e6d7a;
+    height: 38px;
+}
+.filter-settings__item input:focus,
+.filter-settings__item a:focus {
+    border-color: rgba(234,76,137,0.4);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+.filter-settings__item label {
+    font-weight: 500;
+    margin-bottom: .4rem;
+    display: block;
+}
+
+.filter-settings__item a {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+
+
+.filter-settings .filter-settings__title:focus {
+    border-color: rgba(234,76,137,0.4);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+
+.filter-settings .filter-settings__title:focus {
+    border-color: rgba(234,76,137,0.4);
+    box-shadow: 0 0 0 4px rgba(234,76,137,0.1);
+}
+
+.filter-settings .filter-settings__title.close + .filter-settings__items  {
+    visibility: hidden;
+}
+.filter-settings .filter-settings__title.close svg {
+    transform: rotate(0deg);
+    animation: closeCaret .2s ease;
+}
+.filter-settings .filter-settings__title.open + .filter-settings__items  {
+    visibility: visible;
+}
+.filter-settings .filter-settings__title.open svg {
+    transform: rotate(180deg);
+    animation: openCaret .2s ease;
+}
+
+.input-group {
+    position: relative;
+}
+.input-group input {
+    padding-left: 1.8rem;
+}
+.input-group svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: .4rem
+}
+
+@media (max-width: 1050px) {
+    .filter-settings__items {
+        display: block;
+        width: 100%;
+    }
+    .filter-settings__item {
+        margin-bottom: 1rem;
+    }
+    .filter-settings__item input {
+        max-width: unset;
+        width: 100%;
+    }
+}
