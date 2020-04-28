@@ -1,6 +1,11 @@
+#main-header {
+    margin-bottom: 2rem;
+}
+
 .section-main-header {
     background: #F9F8FD;
     padding: 4rem 2rem;
+    
 }
 
 #main-header .main-header-content {

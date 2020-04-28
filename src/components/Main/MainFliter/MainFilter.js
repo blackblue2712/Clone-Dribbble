@@ -14,7 +14,7 @@ const MainFilter = props => {
                 <FilterCategories />
                 <FilterSettings />
             </div>
-            <div className="section-main">
+            <div className="section-main" style={{padding: "0 2rem"}}>
                 <FilterSettingsList />
             </div>
         </section>

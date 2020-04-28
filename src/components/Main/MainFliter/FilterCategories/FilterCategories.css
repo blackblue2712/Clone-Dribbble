@@ -21,6 +21,7 @@
 .filter-cate__item {
     display: inline-block;
     width: auto;
+    margin-right: .1rem;
 }
 .filter-categories .filter-cate__item a {
     padding: .4rem .8rem;
@@ -32,6 +33,7 @@
 }
 .filter-categories .filter-cate__item a:focus {
     font-weight: 500;
+    background: rgba(13,12,34,0.05);
 }
 
 .filter-categories .caret {

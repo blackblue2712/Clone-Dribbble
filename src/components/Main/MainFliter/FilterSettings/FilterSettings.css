@@ -1,5 +1,5 @@
 .filter-settings {
-    /* position: relative; */
+    
 }
 
 .filter-settings__title {
@@ -17,8 +17,6 @@
 
 
 .filter-settings__items {
-    /* display: grid;
-    grid-template-columns: repeat(5, minmax(15%, 1fr));  */
     display: flex;
     justify-content: space-between;
 }
@@ -49,13 +47,6 @@
     margin-bottom: .4rem;
     display: block;
 }
-
-.filter-settings__item a {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
-
 
 
 .filter-settings .filter-settings__title:focus {
@@ -94,6 +85,50 @@
     top: 50%;
     transform: translateY(-50%);
     left: .4rem
+}
+
+
+#js-open-settings {
+    height: 0;
+    overflow: hidden;
+}
+#js-open-settings.open {
+    height: 100%;
+    animation: openSettings .2s linear;
+    overflow: unset;
+    margin-top: 2rem;
+}
+#js-open-settings.close {
+    overflow: hidden;
+    height: 0;
+    animation: closeSettings .2s linear;
+    margin-top: 0;
+    
+}
+
+@keyframes openSettings {
+    0% {
+        margin-top: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    100% {
+        margin-top: 2rem;
+        height: 62px;
+        overflow: hidden;
+    }
+}
+@keyframes closeSettings {
+    0% {
+        margin-top: 2rem;
+        height: 62px;
+    }
+
+    100% {
+        margin-top: 0;
+        height: 0;
+    }
 }
 
 @media (max-width: 1050px) {

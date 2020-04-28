@@ -50,7 +50,7 @@
     min-width: 180px;
     background: #fff;
     position: absolute;
-    z-index: 5;
+    z-index: 15;
 }
 .filter-views .filter-views__item.line {
     height: 1px;
@@ -72,42 +72,6 @@
 .filter-views .filter-views__item:first-of-type a {
     font-weight: 500;
     color: #ea4c89;
-}
-
-
-#js-open-settings {
-    height: 0;
-}
-#js-open-settings.open {
-    height: 100%;
-    animation: openSettings .2s linear;
-    overflow: unset;
-}
-#js-open-settings.close {
-    overflow: hidden;
-    height: 0;
-    animation: closeSettings .2s linear;
-}
-
-@keyframes openSettings {
-    0% {
-        height: 0;
-        overflow: hidden;
-    }
-
-    100% {
-        height: 62px;
-        overflow: hidden;
-    }
-}
-@keyframes closeSettings {
-    0% {
-        height: 62px;
-    }
-
-    100% {
-        height: 0;
-    }
 }
 
 @keyframes openCaret {
