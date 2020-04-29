@@ -26,6 +26,11 @@ const FooterAbout = props => {
                 <a href="#social"><img src={TeamInstagram} alt="TeamInstagram"/></a>
                 <a href="#social"><img src={TeamBlog} alt="TeamBlog"/></a>
             </div>
+
+            {/* <div style={{marginTop: "2rem"}}>
+                <span role="img" aria-label="emoji">Made with 💻 ♥ 🚬 remotely from VietNam </span>
+                    © 2020
+            </div> */}
         </div>
     )
 }

@@ -14,16 +14,20 @@ const NavMobile = props => {
         setOpen(open === 'close' ? 'open' : 'close' );
     }
 
+    const setClose = () => {
+        setOpen('close');
+    }
+
     return (
         <ul className={classes.MobileNavigations}>
             <NavigationItem
-                link="home"
-                dropdown={<DropdownMobile isOpen={open} />}
+                link="#"
+                dropdown={<DropdownMobile isOpen={open} setClose={setClose} />}
             >
                 <img width="25" height="25" style={{padding: ".1rem"}} onClick={toggleMenu} src={open === "close" ? Menu : Close} alt="menu" />
             </NavigationItem>
-            <NavigationItem link="home"><Logo /></NavigationItem>
-            <NavigationItem link="home"></NavigationItem>
+            <NavigationItem link="/"><Logo /></NavigationItem>
+            <NavigationItem link="/"></NavigationItem>
         </ul>
     )
 }

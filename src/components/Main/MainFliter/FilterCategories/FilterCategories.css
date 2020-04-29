@@ -1,0 +1,73 @@
+.filter-categories {
+    /* width: 100%; */
+    position: relative;
+    min-height: 38px;
+    width: 700px;
+}
+
+.filter-cate__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    min-height: 38px;
+    position: absolute;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    width: 700px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.filter-cate__item {
+    display: inline-block;
+    width: auto;
+    margin-right: .1rem;
+}
+.filter-categories .filter-cate__item a {
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    transition: .2s;
+}
+.filter-categories .filter-cate__item a:hover {
+    background: rgba(13,12,34,0.05);
+}
+.filter-categories .filter-cate__item a:focus {
+    font-weight: 500;
+    background: rgba(13,12,34,0.05);
+}
+
+.filter-categories .caret {
+    position: absolute;
+    top: 6px;
+    padding: .2rem;
+    background: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+.filter-categories .caret-left {
+    left: -16px;
+    transform: rotate(90deg)
+}
+.filter-categories .caret-right {
+    right: -16px;
+    transform: rotate(-90deg)
+}
+
+.filter-categories .caret svg {
+    fill: #6e6d7a;
+    width: .875rem;
+    height: .875rem;
+}
+
+.section-filter-mobile .filter-categories {
+    width: 100%;
+}
+.section-filter-mobile .filter-categories .caret-right {
+    right: 0;
+}
+.section-filter-mobile .filter-categories .caret-left {
+    left: 0;
+}
+.section-filter-mobile .filter-cate__items {
+    width: 100%;
+}

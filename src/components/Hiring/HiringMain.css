@@ -8,6 +8,9 @@
 .section-inner {
     padding: 2rem 6rem 2rem 8.75rem;
 }
+.section-inner-m {
+    padding: 2rem;
+}
 .section-inner-narrow-right {
     padding-right: 0;
 }

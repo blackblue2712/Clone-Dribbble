@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.Search svg {
+    fill: #9e9ea7;
+}
+
 .Search .Open input {
     visibility: visible;
     width: 10rem;

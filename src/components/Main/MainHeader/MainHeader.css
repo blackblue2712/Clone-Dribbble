@@ -1,0 +1,26 @@
+#main-header {
+    margin-bottom: 2rem;
+}
+
+.section-main-header {
+    background: #F9F8FD;
+    padding: 4rem 2rem;
+    
+}
+
+#main-header .main-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header-content .section-intro {
+    
+}
+
+.shots-art {
+    background: url(../../../assets/images/romainbriaux.png) center center no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 350px;
+}
