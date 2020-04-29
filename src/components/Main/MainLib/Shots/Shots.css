@@ -38,6 +38,7 @@
     bottom: 0;
     opacity: 0;
     transition: .4s;
+    cursor: pointer;
 }
 .shots-top .shots-action {
     
@@ -98,14 +99,15 @@
     font-weight: 500;
     font-size: 14px;
 }
+
 .shots-bot .shots-contact {
     display: flex;
     align-items: center;
+    max-width: 150px;
     
 }
 .shots-bot .shots-contact span {
     overflow: hidden;
-    max-width: 140px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
