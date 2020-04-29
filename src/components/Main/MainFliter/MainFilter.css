@@ -7,8 +7,16 @@
     padding: 0 2rem
 }
 
+.section-filter-mobile {
+    display: none;
+}
+
 @media (max-width: 1080px) {
     .section-main-filter .filter-categories {
         display: none;
+    }
+
+    .section-filter-mobile {
+        display: block;
     }
 }

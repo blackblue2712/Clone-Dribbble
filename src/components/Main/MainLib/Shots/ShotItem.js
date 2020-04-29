@@ -8,10 +8,13 @@ const ShotItem = props => {
     return (
         <li className="shots-grid__item">
             <div className="shots-wrapp">
+                
                 <div className="shots-top">
-                    <div className="shots-content">
-                        <img src={image} alt="shot-1"/>
-                    </div>
+                    <a href="#show-shot">
+                        <div className="shots-content">
+                            <img src={image} alt="shot-1"/>
+                        </div>
+                    </a>
                     <div className="shots-overlay">
                         <div className="shots-title">
                             {title}
@@ -28,7 +31,10 @@ const ShotItem = props => {
                 </div>
                 <div className="shots-bot">
                     <div className="shots-attribute-teams">
-                        <a href="#contact" className="shots-contact">
+                        <a
+                            href="#contact" className="shots-contact"
+                            title={displayName}
+                        >
                             <img src={avatar} alt={displayName}/>
                             <span>{displayName}</span>
                         </a>
