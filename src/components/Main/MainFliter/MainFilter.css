@@ -6,3 +6,9 @@
     justify-content: space-between;
     padding: 0 2rem
 }
+
+@media (max-width: 1080px) {
+    .section-main-filter .filter-categories {
+        display: none;
+    }
+}

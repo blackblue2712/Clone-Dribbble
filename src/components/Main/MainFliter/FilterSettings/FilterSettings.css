@@ -27,7 +27,7 @@
     width: 100%;
 }
 .filter-settings__item input {
-    max-width: 178px;
+    /* max-width: 178px; */
     width: 100%;
     padding: .6rem .4rem;
     border-radius: 5px;
@@ -142,5 +142,34 @@
     .filter-settings__item input {
         max-width: unset;
         width: 100%;
+    }
+
+    .filter-views .filter-views__items {
+        width: 100%;
+    }
+
+    @keyframes openSettings {
+        0% {
+            margin-top: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    
+        100% {
+            margin-top: 2rem;
+            height: 370px;
+            overflow: hidden;
+        }
+    }
+    @keyframes closeSettings {
+        0% {
+            margin-top: 2rem;
+            height: 370px;
+        }
+    
+        100% {
+            margin-top: 0;
+            height: 0;
+        }
     }
 }

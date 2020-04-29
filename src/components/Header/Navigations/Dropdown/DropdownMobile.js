@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./DropdownMobile.css";
 import Caret from '../../../UI/Caret/CaretDownBold';
 
@@ -52,8 +53,8 @@ const DropdownMobile = props => {
                         </li>
                     </ul>
                 </li>
-                <li className="DropdownMobile__item">
-                    <a href="#hiring">Hiring Desiginers?</a>
+                <li className="DropdownMobile__item" onClick={() => props.setClose()}>
+                    <Link to="/hiring">Hiring Desiginers?</Link>
                 </li>
             </ul>
         </div>

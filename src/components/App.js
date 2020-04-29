@@ -18,7 +18,7 @@ class App extends React.Component {
                     <Header />
                     <main>
                         <Switch>
-                            <Route exact to="/" component={Main} />
+                            <Route exact path="/" component={Main} />
                             <Route exact path="/hiring" component={HiringMain} />
                         </Switch>
                     </main>

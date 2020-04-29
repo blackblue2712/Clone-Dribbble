@@ -17,6 +17,9 @@ const MainFilter = props => {
             <div className="section-main" style={{padding: "0 2rem"}}>
                 <FilterSettingsList />
             </div>
+            <div className="section-main section-filter-mobile" style={{padding: "2rem 2rem 0 2rem"}}>
+                <FilterCategories />
+            </div>
         </section>
     )
 }

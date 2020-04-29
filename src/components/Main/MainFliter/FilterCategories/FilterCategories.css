@@ -58,3 +58,16 @@
     width: .875rem;
     height: .875rem;
 }
+
+.section-filter-mobile .filter-categories {
+    width: 100%;
+}
+.section-filter-mobile .filter-categories .caret-right {
+    right: 0;
+}
+.section-filter-mobile .filter-categories .caret-left {
+    left: 0;
+}
+.section-filter-mobile .filter-cate__items {
+    width: 100%;
+}

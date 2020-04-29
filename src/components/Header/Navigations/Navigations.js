@@ -81,7 +81,7 @@ const Navigations = props => {
     return (
         <>
             <ul className={classes.Navigations}>
-                <NavigationItem link="home"><Logo /></NavigationItem>
+                <NavigationItem link="/"><Logo /></NavigationItem>
                 <NavigationItem
                     link="explore"
                     dropdown={<Dropdown dataDropdown={dataDropdownExplore}/>}
@@ -90,23 +90,23 @@ const Navigations = props => {
                     Explore <CaretDown />
                 </NavigationItem>
                 <NavigationItem
-                    link="for-designers"
+                    link="/for-designers"
                     dropdown={<DropdownForDesign dataDropdown={dataDropdownForDesigners} />}
                     class="has-child"
                 >
                     For Designers <CaretDown />
                 </NavigationItem>
-                <NavigationItem link="hiring-designers">Hiring Designers?</NavigationItem>
+                <NavigationItem link="/hiring">Hiring Designers?</NavigationItem>
                 <NavigationItem
                     class={"ml-auto"}
-                    link="search"
+                    link="#search"
                 >
                     <Search />
                 </NavigationItem>
-                <NavigationItem link="sign-in">Sign in</NavigationItem>
+                <NavigationItem link="#sign-in">Sign in</NavigationItem>
                 <NavigationItem
                     linkClass="btn btn-primary btn-color-white btn-radius"
-                    link="sign-up"
+                    link="#sign-up"
                 >
                     Sign up
                 </NavigationItem>

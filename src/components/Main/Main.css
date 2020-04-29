@@ -1,3 +1,18 @@
 .section-main {
     padding: 2rem;
 }
+
+@media (max-width: 780px) {
+    #main-header .main-header-content {
+        flex-direction: column-reverse;
+    }
+    #main-header .main-header-content .shots-art {
+        margin-top: 1rem;
+    }
+    #main-header .main-header-content .section-intro {
+        text-align: center;
+    }
+    .section-main-header {
+        padding-top: 0 !important;
+    }
+}
