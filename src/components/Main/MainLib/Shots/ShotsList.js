@@ -155,9 +155,7 @@ class ShotsList extends React.Component {
 
     state = {
         isOpenModalShot: false,
-        data: {
-
-        }
+        data: { }
     }
 
     onOpenModalShot = data => {

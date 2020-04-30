@@ -1,0 +1,12 @@
+.media-container {
+    position: relative;
+}
+.media-container .media-inner {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 795px;
+}
+.media-container img {
+    flex: 1 0 auto;
+}

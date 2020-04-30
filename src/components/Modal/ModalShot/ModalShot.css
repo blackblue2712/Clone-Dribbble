@@ -415,6 +415,9 @@
         width: 30%;
         text-align: center;
     }
+    .shot-detail-layout .shot-detail-left {
+        margin-right: 0;
+    }
 
 }
 

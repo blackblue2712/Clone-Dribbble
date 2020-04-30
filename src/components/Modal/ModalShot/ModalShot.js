@@ -14,9 +14,13 @@ class ModalShot extends React.Component {
     }
 
     componentDidMount() {
-        setTimeout(() => {
+        this.timeout = setTimeout(() => {
             this.setState({ loading: false });
         }, 2000)
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.timeout);
     }
 
     render() {
