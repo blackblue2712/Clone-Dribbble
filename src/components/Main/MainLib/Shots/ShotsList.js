@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Shots.css';
 import ShotItem from './ShotItem';
+import ModalShot from '../../../Modal/ModalShot/ModalShot';
 
 const shotsData = [
     {
@@ -150,16 +151,39 @@ const shotsData = [
     }
 ]
 
-const ShotsList = props => {
-    return (
-        <ul className="shots-grid__items">
-            {
-                shotsData.map(shot => {
-                    return <ShotItem shotData={shot} key={shot.id} />
-                })
-            }
-        </ul>
-    )
+class ShotsList extends React.Component {
+
+    state = {
+        isOpenModalShot: false,
+        data: {
+
+        }
+    }
+
+    onOpenModalShot = data => {
+        this.setState({
+            data,
+            isOpenModalShot: true
+        })
+    }
+
+    onCloseModal = () => this.setState({ isOpenModalShot: false, data: {} })
+
+    render() {
+        const { isOpenModalShot, data } = this.state;
+        return (
+            <>
+                { isOpenModalShot && <ModalShot closeModal={this.onCloseModal} data={data} /> }
+                <ul className="shots-grid__items">
+                    {
+                        shotsData.map(shot => {
+                            return <ShotItem onOpenModalShot={this.onOpenModalShot} shotData={shot} key={shot.id} />
+                        })
+                    }
+                </ul>
+            </>
+        )
+    }
 }
 
 export default ShotsList;

@@ -96,6 +96,9 @@ a {
 .ml-auto {
     margin-left: auto;
 }
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
 
 
 /* LAYOUT */

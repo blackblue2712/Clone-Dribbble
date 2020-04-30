@@ -43,3 +43,8 @@
 .btn-gray:hover {
     background: #e7e7e9;
 }
+
+.btn-sm {
+    padding: .4rem .8rem !important;
+    border-radius: 5px;
+}

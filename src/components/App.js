@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 
 import HiringMain from './Hiring/HiringMain';
 import Main from './Main/Main';
+import ModalShot from './Modal/ModalShot/ModalShot';
 
 class App extends React.Component {
 
@@ -20,6 +21,7 @@ class App extends React.Component {
                         <Switch>
                             <Route exact path="/" component={Main} />
                             <Route exact path="/hiring" component={HiringMain} />
+                            <Route exact path="/modal" component={ModalShot} />
                         </Switch>
                     </main>
                     <Footer />
