@@ -8,7 +8,7 @@ class HiringNavTop extends React.Component {
         return (
             <nav className="hiring-nav">
                 <ul className="hiring-nav__items">
-                    <li className="hiring-nav__item active">
+                    <li className="hiring-nav__item">
                         <a href="#overview">Overview</a>
                     </li>
                     <li className="hiring-nav__item">

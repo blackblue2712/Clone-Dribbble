@@ -12,7 +12,7 @@ const ShotItem = props => {
                 <div className="shots-top">
                     <a href="#show-shot" onClick={() => props.onOpenModalShot(props.shotData)}>
                         <div className="shots-content">
-                            <img src={image} alt="shot-1"/>
+                            <img src={image} alt={title}/>
                         </div>
                     </a>
                     <div className="shots-overlay">

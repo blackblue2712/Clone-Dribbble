@@ -6,9 +6,12 @@ import "./UI/Button/Button.css";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
-import HiringMain from './Hiring/HiringMain';
 import Main from './Main/Main';
-import ModalShot from './Modal/ModalShot/ModalShot';
+import AsyncComponent from '../HOC/AsyncComponent/AsyncComponent';
+
+const HiringAsync = AsyncComponent(() => {
+    return import('./Hiring/HiringMain');
+})
 
 class App extends React.Component {
 
@@ -20,8 +23,7 @@ class App extends React.Component {
                     <main>
                         <Switch>
                             <Route exact path="/" component={Main} />
-                            <Route exact path="/hiring" component={HiringMain} />
-                            <Route exact path="/modal" component={ModalShot} />
+                            <Route exact path="/hiring" component={HiringAsync} />
                         </Switch>
                     </main>
                     <Footer />

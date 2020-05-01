@@ -6,8 +6,9 @@ import FooterItemNav from './FooterItem/FooterNav';
 import FooterItemJob from './FooterItem/FooterJob';
 import FooterItemCount from './FooterItem/FooterCount';
 
-const Footer = props => {
+import ScrollToTop from './ScollToTop';
 
+const Footer = props => {
     return (
         <footer className={classes.Footer}>
             <div className={classes.FooterItems}>
@@ -22,7 +23,8 @@ const Footer = props => {
                      © 2020
                 </div>
             </div>
-            <div className={classes.ScrollToTop}></div>
+
+            <ScrollToTop />
         </footer>
     )
 }

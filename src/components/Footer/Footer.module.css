@@ -15,6 +15,25 @@
     margin-top: 2rem;
 }
 
+.ScrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1005;
+}
+.ScrollToTop a {
+    display: inline-block;
+    opacity: .37;
+}
+.ScrollToTop a:hover {
+    display: inline-block;
+    opacity: .72;
+}
+.ScrollToTop img {
+    width: 50px;
+    height: 50px;
+}
+
 @media (max-width: 953px) {
     .FooterItems {
         justify-content: flex-start;
