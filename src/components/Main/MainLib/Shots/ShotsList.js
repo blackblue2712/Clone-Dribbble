@@ -4,6 +4,7 @@ import './Shots.css';
 import ShotItem from './ShotItem';
 import AsyncComponent from '../../../../HOC/AsyncComponent/AsyncComponent';
 import dataJson from './shotData.json';
+import dataJson2 from './shotData2.json';
 
 const AsyncModalShot = AsyncComponent(() => {
     return import('../../../Modal/ModalShot/ModalShot');
@@ -65,12 +66,16 @@ class ShotsList extends React.Component {
                     if(window.pageYOffset > lastChildToWrapParent) {
                         this.setState({ isLoadMore: true })
                         setTimeout(() => {
-                            this.setState({ shotsData: [...this.state.shotsData, ...dataJson], isLoadMore: false });
+                            this.setState({ shotsData: [...this.state.shotsData, ...dataJson2], isLoadMore: false });
                         }, 2000)
                     }
                 }
             }, 60)
         }
+    }
+
+    handleSubmitFOrm = () => {
+        
     }
 
     render() {
