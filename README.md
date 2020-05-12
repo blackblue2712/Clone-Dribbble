@@ -1,3 +1,15 @@
+## About
+
+- I try to clone dribbble interface. Now 2 pages were cloned (/main + /hiring)
+- Use code spliting (`hiring-component` and `modal-detail-shot-component` are load async so that an app can load faster)
+
+## Shots
+![images](https://res.cloudinary.com/daerg3axr/image/upload/v1589290071/hothilchbudr2jbkasde.png)
+
+![images](https://res.cloudinary.com/daerg3axr/image/upload/v1589290104/orqf6lqlywsyok8paakn.png)
+
+![images](https://res.cloudinary.com/daerg3axr/image/upload/v1589290151/zsahtu2lxjfdxthoytpx.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
