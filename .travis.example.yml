@@ -1,0 +1,20 @@
+require: sudo
+services:
+  - docker
+
+before_install:
+  - docker build -t liars2712/clone-dribbble-test -f Dockerfile.dev .
+
+script:
+  - docker run liars2712/clone-dribbble-test npm run test -- --watchAll=false
+
+after_success:
+  - docker build liars2712/clone-dribbble .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push liars2712/clone-dribbble
+
+
+deploy:
+  provider: firebase
+  token:
+    secure: APP TOKEN
